@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Assignment page">
+        <meta name="keywords" content="assignments, tables,tasks">
+        <meta name="author" content="Sam">
+        <title> Week 2 Assignment</title>
+    </head>
+    <body>
+        <header>
+            <h1>Week 2 Assignment</h1>
+        </header>
+        <p>Our delivarables for today are;</p>
+            <ol type="i">
+                <li>Using lists, tables and media</li>
+                <li>Complete HTML form </li>
+                <li>Correct use of attributes</li>
+                <li>A clear layout using semantic tags</li>
+            </ol>
+            <h2>Inserting lists</h2>
+            <p>There are different types of lists in HTML;</p>
+            <ol>
+                <li>Ordered lists</li>
+                <li>Unordered lists</li>
+                <li>Definition lists</li>
+                <li>Nested lists</li>
+            </ol>
+            <h2>First off is the Ordered list</h2>
+            <p>Example;</p>
+            <ol type="i">
+                <li>Kenya</li>
+                <li>Uganda</li>
+                <li>Ethiopia</li>
+                <li>Tanzania</li>
+            </ol>
+            <h2>Second is the un ordered lists</h2>
+            <ul style="list-style-type:square">
+                <li>Africa</li>
+                <li>Asia</li>
+                <li>Europe</li>
+                <li>Australia</li>
+                <li>North America</li>
+                <li>South America</li>
+                <li>Antartica</li>
+            </ul>
+            <h2>Third is Definition list:</h2>
+            <p>It is used to organize and present pairs of terms and their corresponding definitions or descriptions</p>
+            <p>Example:</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper text markup language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading style sheets</dd>
+            </dl>
+            <h2>Fourth is Nested lists</h2>
+            <p>These are lists within other lists</p>
+            <p>Example:</p>
+            <ul>
+                <li>fruits
+                    <ul>
+                        <li>Banana</li>
+                        <li>Apple</li>
+                        <li>Pine apple</li>
+                        <li>Water mellon</li>
+                    </ul>
+                </li>
+            </ul>
+            <ol>
+                <li>Vegetables</li>
+                <ol type="i">
+                    <li>Cabbage</li>
+                    <li>Lettuce</li>
+                    <li>Carrot</li>
+                    <li>Cucumber</li>
+                </ol>
+            </ol>
+            <ol>
+                <li>Meat</li>
+                <ol>
+                    <li>Mutton</li>
+                    <li>Beef</li>
+                    <li>Pork</li>
+                    <li>Fish</li>
+                </ol>
+            </ol>
+            <ol>
+                <li>Instructions to be followed</li>
+                <ol>
+                    <li>Open the fridge</li>
+                    <li>Take out the milk:</li>
+                    <ol type="i">
+                        <li>Check the expiration date</li>
+                        <li>Pour out the milk</li>
+                    </ol>
+                    <li>Close the fridge</li>
+                </ol>
+            </ol>
+            <h3>Inserting Tables in HTML</h3>
+            <table border="1">
+                <t head>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </t> 
+                <t body>
+                    <tr>
+                        <td>Angela</td>
+                        <td>20</td>
+                        <td>Zimbabwe</td>
+                    </tr>
+                    <tr>
+                        <td>Tony</td>
+                        <td>25</td>
+                        <td>Uganda</td>
+                    </tr>
+                    <tr>
+                        <td>Alfred</td>
+                        <td>28</td>
+                        <td>South Africa</td>
+                    </tr>
+                    <footer>
+                        <tr>
+                            <td colspan="2">Total people:3</td>
+                        </tr>
+                    </t>
+                </t>
+            </table>
+            <h3>Inserting Media</h3>
+            <p>There are various types of media including:</p>
+            <ul style="list-style-type:square">
+                <li>Videos</li>
+                <li>Pictures</li>
+                <li>Audio</li>
+            </ul>
+            <h3>Pictures</h3>
+            <img src="Newyork city.jpg" alt="Image of Newyork city" width="300" height="200">
+            <h3>Videos</h3>
+            <video src="Video of a bird.mp4" alt="Video of a bird" width="300" height="200" controls muted autoplay>
+            </video><br><br>
+            <a href="https://www.google.com/search?q=plp+academy&oq=&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIPCAAQRRg5GIMBGLEDGIAEMg0IARAAGIMBGLEDGIAEMgYIAhBFGDsyD">Learn more about PLP</a>
+            <h4>Adding Forms</h4>
+            <form action="submit" method="post" autocomplete="on">
+                <input type="text" name="username" placeholder="Enter your name" autocomplete="name" required><br><br>
+                <input type="text" name="email" placeholder="Enter email" autocomplete="email" required><br><br>
+                <input type="password" name="password" minlength="8" maxlength="16" placeholder="Password" required><br><br>
+                <input type="text" name="zip" pattern="[0-9]{5}" title="Enter a 5-digit zipcode" placeholder="Zip code"><br><br>
+                <fieldset>
+                <legend>Personal information</legend>
+                <label for="firstname">First Name</label>
+                <input type="text" id="first name" name="first name" required>
+                <label for="Admission number">Admission number</label>
+                <input type="text" id="Admission number" name="Admission number" required><br><br>
+                <label for="Country of origin">Country of origin</label>
+                <input type="text" id="Country name" name="country name" required>
+                <label for="Phone number">Phone number</label>
+                <input type="text" id="phone number" name="phone number" required><br><br>
+                <label for="Age">Age</label>
+                <input type="text" ad="age" name="age" required>
+            </fieldset>
+            <button type="Submit">Submit Form</button><br><br>
+            </form>
+            <input type="text" id="city" name="city" value="Welcome all" readonly><br><br>
+            <main>
+        <article>
+            <h1>The Power of Semantic HTML</h1>
+            <p>Posted by Jane Doe on August 9, 2025</p>
+
+            <section>
+                <h2>What is Semantic HTML?</h2>
+                <p>Semantic HTML means using tags that describe the meaning of the content they contain. This approach is fundamental for building accessible and maintainable websites.</p>
+            </section>
+
+            <section>
+                <h2>Why It Matters for Accessibility</h2>
+                <p>Assistive technologies, like screen readers, rely on semantic tags to interpret the structure of a page. They allow users to navigate by landmarks (like the `main` or `nav` section) and jump between headings, making the content usable for people with disabilities.</p>
+            </section>
+
+        </article>
+
+        <aside>
+            <h3>Related Articles</h3>
+            <ul>
+                <li><a href="/article-1">Getting Started with CSS</a></li>
+                <li><a href="/article-2">Best Practices for SEO</a></li>
+            </ul>
+        </aside>
+    </main>
+            <footer>
+            <nav>
+                <ul>
+                    <li><a href="about">About us</a></li>
+                    <li><a href="services">Our Services</a></li> 
+                </ul>
+                <p>Thank you for visiting this page</p>
+            </nav>
+            </footer>
+    </body>
+</html>
+
